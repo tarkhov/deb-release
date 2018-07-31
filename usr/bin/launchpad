@@ -1,0 +1,6 @@
+#!/bin/sh
+# $1 - your lp id
+# $2 - source.changes file
+
+# https://help.launchpad.net/Packaging/PPA/Uploading
+dput ppa:$1/ppa $2
