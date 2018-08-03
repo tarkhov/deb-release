@@ -1,0 +1,9 @@
+#!/bin/sh
+
+gpg_key=$1
+if [ ! $gpg_key ]; then
+    gpg_key=$GPGKEY
+fi
+
+debuild -S -k$gpg_key
+#debuild clean

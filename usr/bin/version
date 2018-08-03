@@ -1,6 +1,0 @@
-#!/bin/sh
-# $1 - version
-# $2 - revision
-
-# dch -v version-revision - https://www.debian.org/doc/manuals/maint-guide/update.html
-dch -v $1-$2

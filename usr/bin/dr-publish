@@ -1,0 +1,18 @@
+#!/bin/sh
+# $1 - your lp id
+# $2 - source.changes file
+
+ppa=$1
+if [ ! $ppa ]; then
+    echo "PPA name not provided."
+    exit
+fi
+
+changes=$2
+if [ ! $changes ]; then
+    echo "Debian changes not provided."
+    exit
+fi
+
+# https://help.launchpad.net/Packaging/PPA/Uploading
+dput ppa:$ppa/ppa $changes
