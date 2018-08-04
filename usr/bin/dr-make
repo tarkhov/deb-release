@@ -1,0 +1,20 @@
+#!/bin/sh
+
+package=$1
+if [ ! $package ]; then
+    echo "Package name not provided."
+    exit
+fi
+
+version=$2
+if [ ! $version ]; then
+    echo "Package version not provided."
+    exit
+fi
+
+license=$3
+if [ ! $license ]; then
+    license="mit"
+fi
+
+dh_make -p $package_$version --copyright $license --createorig --single --yes

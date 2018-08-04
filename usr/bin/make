@@ -1,6 +1,0 @@
-#!/bin/sh
-# $1 - package name
-# $2 - version without revision
-# $3 - license name (mit)
-
-dh_make -p $1_$2 --copyright $3 --createorig --single --yes
