@@ -1,0 +1,3 @@
+#!/bin/sh
+
+apt -y install dh-make devscripts dupload packaging-dev
