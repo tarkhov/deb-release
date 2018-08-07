@@ -1,0 +1,23 @@
+#!/bin/sh
+
+email=$1
+if [ ! $email ]; then
+    echo "Email not provided."
+    exit
+fi
+
+full_name=$2
+if [ ! $full_name ]; then
+    echo "Full name not provided."
+    exit
+fi
+
+gpg_key=$3
+if [ $gpg_key ]; then
+    GPGKEY=$gpg_key
+    export GPGKEY
+fi
+
+DEBEMAIL=$email
+DEBFULLNAME=$full_name
+export DEBEMAIL DEBFULLNAME
