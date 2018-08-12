@@ -1,0 +1,5 @@
+usr/bin/dr-build usr/bin
+usr/bin/dr-make usr/bin
+usr/bin/dr-publish usr/bin
+usr/bin/dr-release usr/bin
+usr/bin/dr-version usr/bin

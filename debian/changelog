@@ -1,0 +1,5 @@
+deb-release (0.1.0-1) bionic; urgency=medium
+
+  * Bionic Beaver release
+
+ -- Alexander Tarkhov <agtuks@gmail.com>  Sun, 12 Aug 2018 18:20:18 +0300

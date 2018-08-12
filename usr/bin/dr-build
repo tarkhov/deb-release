@@ -6,4 +6,4 @@ if [ ! $gpg_key ]; then
 fi
 
 debuild -S -k$gpg_key
-#debuild clean
+debuild -- clean

@@ -13,4 +13,9 @@ if [ ! $revision ]; then
 fi
 
 # dch -v version-revision - https://www.debian.org/doc/manuals/maint-guide/update.html
-dch -v $version-$revision
+text=$3
+if [ ! $text ]; then
+    text="release"
+fi
+
+dch -v $version-$revision $text
