@@ -14,8 +14,8 @@ fi
 
 # dch -v version-revision - https://www.debian.org/doc/manuals/maint-guide/update.html
 text=$3
-if [ ! $text ]; then
+if [ ! "$text" ]; then
     text="release"
 fi
 
-dch -v $version-$revision $text
+dch -v "${version}-${revision}" "$text"

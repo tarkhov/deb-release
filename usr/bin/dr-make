@@ -17,4 +17,4 @@ if [ ! $license ]; then
     license="mit"
 fi
 
-dh_make -p $package_$version --copyright $license --createorig --single --yes
+dh_make -p "${package}_${version}" --copyright $license --createorig --single --yes

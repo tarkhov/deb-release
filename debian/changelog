@@ -1,3 +1,9 @@
+deb-release (0.1.2-1) bionic; urgency=medium
+
+  * Bionic Beaver fixes
+
+ -- Alexander Tarkhov <agtuks@gmail.com>  Sun, 12 Aug 2018 19:47:58 +0300
+
 deb-release (0.1.0-1) bionic; urgency=medium
 
   * Bionic Beaver release
