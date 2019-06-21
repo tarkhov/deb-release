@@ -17,12 +17,12 @@ Debian package publishing scripts.
    5. [Go to parent directory](#go-to-parent-directory)
    6. [Publish to launchpad](#publish-to-launchpad)
 5. [Create new release](#create-new-release)
-   1. [New Version](#new-version)
-   2. [Add release in changelog](#add-release-in-changelog)
-   3. [Make](#make)
-   4. [Build source package](#build-source-package)
-   5. [Go to parent directory](#go-to-parent-directory)
-   6. [Publish to launchpad](#publish-to-launchpad)
+   1. [New version](#new-version)
+   2. [New release](#new-release)
+   3. [New source](#new-source)
+   4. [New build](#new-build)
+   5. [Go to parent](#go-to-parent)
+   6. [Release to launchpad](#publish-to-launchpad)
 6. [Author](#author)
 7. [License](#license)
 
@@ -115,7 +115,7 @@ Third argument is a release name, optional and not required.
 dr-version 0.1.0 1
 ```
 
-### Add release in changelog
+### New release
 
 Add the name of the version of ubunt instead of UNRELEASED, for example: bionic.
 
@@ -123,7 +123,7 @@ Add the name of the version of ubunt instead of UNRELEASED, for example: bionic.
 dr-release
 ```
 
-### Make
+### New source
 
 Without revision number, example: a2site_0.1.3.
 
@@ -131,19 +131,19 @@ Without revision number, example: a2site_0.1.3.
 dr-make my-package 0.1.0
 ```
 
-### Build source package
+### New build
 
 ```bash
 dr-build
 ```
 
-### Go to parent directory
+### Go to parent
 
 ```bash
 cd ..
 ```
 
-### Publish to launchpad
+### Release to launchpad
 
 ```bash
 dr-publish your-ppa-id package-source.changes
