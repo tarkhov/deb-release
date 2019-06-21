@@ -37,7 +37,7 @@ sudo apt update
 sudo apt install deb-release
 ```
 
-## Preapre
+## Prepare
 
 You need to generate GPG key first.
 
