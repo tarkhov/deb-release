@@ -22,7 +22,7 @@ Debian package publishing scripts.
    3. [New source](#new-source)
    4. [New build](#new-build)
    5. [Go to parent](#go-to-parent)
-   6. [Release to launchpad](#publish-to-launchpad)
+   6. [Release to launchpad](#release-to-launchpad)
 6. [Author](#author)
 7. [License](#license)
 
