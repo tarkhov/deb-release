@@ -16,8 +16,15 @@ Debian package publishing scripts.
    4. [Build source package](#build-source-package)
    5. [Go to parent directory](#go-to-parent-directory)
    6. [Publish to launchpad](#publish-to-launchpad)
-5. [Author](#author)
-6. [License](#license)
+5. [Create new release](#create-new-release)
+   1. [New Version](#new-version)
+   2. [Add release in changelog](#add-release-in-changelog)
+   3. [Make](#make)
+   4. [Build source package](#build-source-package)
+   5. [Go to parent directory](#go-to-parent-directory)
+   6. [Publish to launchpad](#publish-to-launchpad)
+6. [Author](#author)
+7. [License](#license)
 
 ## Compatibility
 
@@ -87,6 +94,50 @@ dr-build
 ### Go to parent directory
 
 This directory contain source.changes needed for putting package to launchpad.
+
+```bash
+cd ..
+```
+
+### Publish to launchpad
+
+```bash
+dr-publish your-ppa-id package-source.changes
+```
+
+## Create new release
+
+### New Version
+
+Third argument is a release name, optional and not required.
+
+```bash
+dr-version 0.1.0 1
+```
+
+### Add release in changelog
+
+Add the name of the version of ubunt instead of UNRELEASED, for example: bionic.
+
+```bash
+dr-release
+```
+
+### Make
+
+Without revision number, example: a2site_0.1.3.
+
+```bash
+dr-make my-package 0.1.0
+```
+
+### Build source package
+
+```bash
+dr-build
+```
+
+### Go to parent directory
 
 ```bash
 cd ..
