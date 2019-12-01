@@ -30,7 +30,7 @@ Debian package publishing scripts.
 
 Name | Version
 ------- | -------
-Ubuntu | 16.04 - 18.04 LTS
+Ubuntu | >= 16.04
 
 ## Installation
 
